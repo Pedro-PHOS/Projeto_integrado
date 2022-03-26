@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*Formulário de cadastro e login*/
+.hero {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(teste222.jpg)
+}
+
+.form-box {
+    width: 350px;
+    height: 480px;
+    position: relative;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-right: 3px solid #58cced;
+    padding-right: 135px;
+    padding-left: 100px;
+    padding-top: 7px;
+    margin: 45px;
+    margin-top: 100px;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #808080;
+    border-radius: 3px
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #58cced, #1261a0);
+    border-radius: 3px;
+    transition: .9s;
+    color: #fff;
+}
+
+.input-group{
+    top: 110px;
+    position: absolute;
+    width: 280px;
+    transition: .9s;
+}
+
+#Login.input-group {
+    margin-right: 21px;
+    width: 245px;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 10px;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #58cced, #1261a0);
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+}
+
+.check-box{
+    margin: 30px 10px 33px;
+}
+
+span {
+    color: #1261a0;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#Login{
+    
+}
+
+#Register{
+    left: 450px;
+}
+
+/*Início dos Elementos do Container de blocos*/
+.container {
+    margin-top: 20px
+}
+
+    .container h2 {
+        font-size: 25px;
+        color: #888;
+        padding-left: 160px;
+    }
+
+    .container .list {
+        margin-top: 40px;
+        display: flex;
+        padding-left: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+/*Fim dos Elementos do Container*/
+/****/
+/*Início dos Elementos do Formulário*/
+.form-element {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
+    width: 205px;
+    height: 150px;
+}
+
+    .form-element a {
+        text-decoration: none;
+    }
+
+/*Fim dos Elementos do Formulário*/
+/****/
+/*Início da estrutura de texto geral dos blocos*/
+.box-header {
+    font-size: 30px;
+    color: #555;
+    display: flex;
+    height: 8px;
+}
+
+.form-element .icon {
+    width: 194px;
+    height: 31px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.form-element img {
+    width: 35px;
+    height: 29px;
+    padding-left: 10px;
+}
+
+.Bloco-Title {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.Bloco-Body {
+    padding-left: 10px;
+    font-style: italic;
+    padding-top: 15px;
+    font-size: 18px;
+}
+/*Fim da estrutura de texto geral dos blocos*/
+
+/*Início da estrutura de texto do bloco de Python*/
+.form-element section.python {
+    background-color: #00c86f;
+}
+
+section.python .box-header {
+    background-color: #4dd99a;
+}
+
+section.python .Bloco-Body {
+    color: #99e9c5;
+}
+.form-element section.python img {
+    width: 27px;
+    height: 25px;
+}
+/*Início da estrutura de texto do bloco de Redes*/
+.form-element section.Redes {
+    background-color: #38add4;
+}
+
+section.Redes .box-header {
+    background-color: #5bc4e7;
+}
+
+section.Redes .Bloco-Body {
+    color: #5bc4e7;
+}
+
+.form-element section.Redes img {
+    height: 23px;
+    width: 33px;
+}
+.form-element section.Redes img {
+    width: 23px;
+    height: 20px;
+    padding-top: 2px;
+}
+/*Início da estrutura de texto do bloco de Infraestrutura*/
+.form-element section.Infraestrutura {
+    background-color: #01f7e3;
+}
+
+section.Infraestrutura .box-header {
+    background-color: #a5fff8;
+}
+
+section.Infraestrutura .Bloco-Body {
+    color: #a5fff8;
+}
+
+.form-element section.Infraestrutura img {
+    height: 23px;
+    width: 33px;
+}
+/*Início da estrutura de texto do bloco de Linux*/
+.form-element section.Linux {
+    background-color: #403e3e;
+}
+
+section.Linux .box-header {
+    background-color: #606060;
+}
+
+section.Linux .Bloco-Body {
+    color: #606060;
+}
+
+.form-element section.Linux img {
+    height: 16px;
+    width: 16px;
+    padding-top: 5px;
+}
+    /*Início da estrutura de texto do bloco de Infosec*/
+.form-element section.Infosec {
+    background-color: #009bdb;
+}
+
+section.Infosec .box-header {
+    background-color: #45b7e6;
+}
+
+section.Infosec .Bloco-Body {
+    color: #45b7e6;
+}
+
+.form-element section.Infosec img {
+    height: 16px;
+    width: 16px;
+    padding-top: 5px;
+}
+
+/*Início da estrutura de texto do bloco de Office*/
+.form-element section.Office {
+    background-color: #ed5d25;
+}
+
+section.Office .box-header {
+    background-color: #e88c69;
+}
+
+section.Office .Bloco-Body {
+    color: #e88c69;
+}
+
+.form-element section.Office img {
+    height: 16px;
+    width: 16px;
+    padding-top: 5px;
+}
+
+/*Início da estrutura de texto do bloco de Java*/
+.form-element section.csharp {
+    background-color: #7d2e80;
+}
+
+section.csharp .box-header {
+    background-color: #95478e;
+}
+
+section.csharp .Bloco-Body {
+    color: #95478e;
+}
+
+.form-element section.csharp img {
+    height: 28px;
+    width: 28px;
+}
+
+/*Início da estrutura de texto do bloco de Adobe*/
+.form-element section.Adobe {
+    background-color: #f30f01;
+}
+
+section.Adobe .box-header {
+    background-color: #ee5249;
+}
+
+section.Adobe .Bloco-Body {
+    color: #ee5249;
+}
+
+.form-element section.Adobe img {
+    height: 16px;
+    width: 16px;
+    padding-top: 5px
+}
+
+/*Início da estrutura de texto do bloco de Windows*/
+.form-element section.Windows {
+    background-color: #0078d6;
+}
+
+section.Windows .box-header {
+    background-color: #5c9ed2;
+}
+
+section.Windows .Bloco-Body {
+    color: #5c9ed2;
+}
+
+.form-element section.Windows img {
+    height: 16px;
+    width: 16px;
+    padding-top: 5px
+}
+
