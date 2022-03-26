@@ -1,0 +1,344 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+ul{
+    padding: 0px;
+}
+
+        /* Menu principal do header*/
+        #menu-principal{
+            width: 100%;
+            background-color: #062142;
+        }
+        #header-1{
+            width: 100%;
+            height: 70px;  
+        }
+        #header-2{
+            width: 100%;
+            height: 60px;
+            border-bottom: 2px solid #efefef;
+            margin-bottom: 0 auto;
+
+        }
+        #logo{
+            float: left;
+            margin-top: -18px;
+            margin-left: 0px;
+            width: 17%;
+            height: 100px;
+        }
+        #social{
+            float: right;
+            margin-right: 30px;
+            height: 61px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #social ul li{
+            display: inline-block;
+            margin: 12px;
+            margin-top: 1px;
+        }
+
+        /* Menu Principal/secundario do header*/
+        #menu2{ 
+            float: left;
+        }
+        #menu2 ul {
+            margin-top: 2px;
+            margin-left: 100px;
+            margin-bottom: 0px;
+        }
+        #menu2 ul li{
+            display: inline-block;
+            margin: 5px;
+            margin-left: 50px;
+            list-style: none;
+            margin-top: 15px;  
+        }
+        #menu2 ul li a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Open Sans';
+            text-transform: uppercase;
+        }
+        #menu2 ul li a:hover{
+            color: #646464;
+        }
+
+        /* Menu secundario do header*/
+        #menu{ 
+            float: left;
+        }
+        #menu ul {
+            margin-top: -10px;
+            margin-left: 300px;
+            margin-bottom: 0px;
+        }
+        #menu ul li{
+            display: inline-block;
+            margin: 5px;
+            margin-left: 20px;
+            list-style: none;
+            margin-top: 30px;  
+        }
+        #menu ul li a{
+            text-decoration: none;
+            color: #8b8b8b;
+            font-size: 17px;
+            font-family: 'Open Sans';
+            text-transform: uppercase;
+        }
+        #menu ul li:hover{
+            height: 30px;
+            border-bottom: 1px solid #00bac6;
+            margin-bottom: 0px;
+        }
+        #menu ul li a:hover{
+            color: #00bac6;
+        }
+        #busca{
+            margin-top: 15px;
+            margin-right: 20px;
+            float: right;
+        }
+        #busca-menu{
+            height: 10px;
+            width: 170px;
+            padding: 10px;
+            background-image: url('../img/busca.png');
+            background-repeat: no-repeat;
+            background-position: 95%;
+            border: 1px solid #d6d6d6;
+        }
+
+    
+        /*Slider do body*/
+        .slider-principal{
+        position: relative;
+        }
+        button.slick-prev{
+            font-size: 0px;
+            border: none;
+            width: 25px;
+            height: 51px;
+            background-color: transparent;
+            background-image: url('../img/anterior.png');
+            position: absolute;
+            left: 45px;
+            z-index: 9;
+            top: 35%;
+        }
+        button.slick-next{
+            font-size: 0px;
+            border: none;
+            width: 25px;
+            height: 51px;
+            background-color: transparent;
+            background-image: url('../img/seguinte.png');
+            position: absolute;
+            z-index: 9;
+            right: 45px;
+            top: 35%;
+            }
+        ul.slick-dots li button{
+                font-size: 0px;
+                border: 3px solid white;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                background: transparent;
+                padding: 5px;
+                margin: 2px;
+            }
+        ul.slick-dots{
+                position: absolute;
+                margin: 0 auto;
+                left: 50%;
+                top: 90%;
+            }
+        ul.slick-dots li.slick-active button{
+                background: #08bcc8;
+            }
+        ul.slick-dots li{
+                display: inline-block;
+            }
+        .slick-initialized{
+                overflow: hidden;
+            }
+
+        /* Imagens abaixo do slider*/
+        #content{
+            margin: 0 auto;
+            width: 980px;
+            height: 543px;
+            text-align: center;
+        }
+        #content strong{
+            color: #646464;
+        }
+        #content h1{
+            font-size: 40px;
+            color: #818181;
+            text-transform: uppercase;
+        }
+        #content p{
+            font-size: 25px;
+            color: #9a9a9a;
+        }
+
+        /*Ainda por identificar*/
+        .col-3{
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 30px;
+            width: 30%;
+            float: left;
+            position: relative;
+            
+        }
+        .col-3 h2{
+            border-bottom: 500px;
+            margin-top: 10px;
+            color: #848484;
+        }
+        .col-3 p{
+            color: #c2c2c2;
+        }
+        .col-3 strong{
+            color: #7b7b7b;
+        }
+
+        /* Artigos do site*/
+        .conteudo-sec {
+            background-color: #eeeeee;
+            width: 100%;
+            height: 777px;
+        }
+        .bloco-imagem{
+            height: 673px;
+            width: 998px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .bloco-imagem img{
+            height: 180px;
+            width: 300px;
+        }
+        .bloco-texto{
+            height: 319px;
+            float: left;
+            border: 1px solid #c5c5c5;
+            margin-left: 25px;
+            padding: 0;
+            margin-top: 1em;
+        }
+        .bloco-2{
+            float: left;   
+        }
+        .bloco-texto p{
+            margin-left: 30px;
+            color: #818181;
+        }
+        .conteudo-sec:before{
+            width: 100%;
+            display: inline-block;
+            content: "";
+            height: 52px;
+            background: #ffffff;
+            background-image: url('../img/shape-1.png');
+            background-repeat: no-repeat;
+            background-position: center ;
+        }
+
+        /*Logos do footer1*/
+        .c-logo{
+            height: 177px;
+            width: 100%;
+        }
+        .c-logo-imagem{
+            width: 998px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        .c-logo img{
+            padding-top: 30px;
+            width: 15%;
+            float: left;
+            margin-left: 110px;
+            width: 150px;
+        }
+
+        /* inicio do footer*/
+        .footer1{
+            height: 420px;
+            background-color: #4c514a;
+            
+        }
+        .footer1-texto{
+            margin: 0 auto;
+            width: 1200px;
+            height: 330px;
+            padding-left: 216px;
+        }
+  
+        .footer1 strong{
+            color: #f3f3f3;
+            font-size: 25px;
+        }   
+        .footer1 h2{
+            color: #f3f3f3;
+            font-size: 27px;
+        }
+        .footer1 p{
+            margin: 0 auto;
+            width: 215px;
+            color: #c1c1c1;
+            font-size: 12pt;     
+        } 
+        .col-4{
+        width: 24%;
+        padding: 0px;
+        word-spacing: 7px;
+        }
+        .footer1-texto img{
+            margin-right: 17px;
+        }
+        .img-ft1{
+            border-bottom: 1px solid #5c5c5c;
+            padding-bottom: 10px;
+        }
+
+        /** footer final**/
+        .footer2{
+            width: 100%;
+            background-color: #262120;
+            height: 90px;
+        }
+        .footer-texto{
+           width: 40%;
+           margin: 0 auto;
+           padding-left: 535px;
+        }
+        .footer-texto p{
+            color: #c1c1c1;   
+        }
+
+        .footer-social{
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        
