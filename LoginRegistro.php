@@ -1,4 +1,7 @@
-﻿<!--Header Padr�o-->
+﻿<?php 
+    require_once 'php/Users.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,18 +24,18 @@
                 <button type="button" class="toggle-btn" onclick="Login()">Log-in</button>
                 <button type="button" class="toggle-btn" onclick="Register()">Register</button>
 
-                <form id="Login" class="input-group" method="post" action ="/php/loginregistro.php">
-                    <input type="text" class="input-field" placeholder="User id" required />
-                    <input type="text" class="input-field" placeholder="Enter Password" required />
+                <form id="Login" class="input-group" method="post">
+                    <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Remember Password</span>
                     <button type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
                 </form>
 
-                <form id="Register" class="input-group" method="post" action ="/php/loginregistro.php">
-                    <input type="text" class="input-field" placeholder="User id" required />
-                    <input type="email" class="input-field" placeholder="E-mail ID" required />
-                    <input type="text" class="input-field" placeholder="Enter Password" required />
-                    <input type="checkbox" class="check-box" /><span>I Agree to The Terms & Conditions</span>
+                <form id="Register" class="input-group" method="post">
+                    <input type="text" name ="user_id" class="input-field" placeholder="User id" required />
+                    <input type="email" name="email" class="input-field" placeholder="E-mail ID" required />
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
+                    <input type="checkbox" class="check-box" require/><span>I Agree to The Terms & Conditions</span>
                     <button type="submit" class="submit-btn" style="color: aliceblue">Register</button>
                 </form>
             </div>
@@ -225,19 +228,7 @@
           var y = document.getElementById("Register");
           var z = document.getElementById("btn");
     
-            // Remover função abaixo assim que os metodos de login e register forem implementados - linha 230 até 242
             
-            const formslogin = x
-            const formsloginRegister = y
-            
-           
-            formsloginRegister.addEventListener('submit',function(event){
-
-            event.preventDefault()
-
-            })
-            
-
             function Register() {
                 x.style.left = "-400px";
                 y.style.left = "-28px";
@@ -249,9 +240,46 @@
                 y.style.left = "450px";
                 z.style.left = "0";
             }
-        
 
 
         </script>
+
+    <?php 
+    //Validar o clique no botão
+
+    if(isset($_POST['user_id']))
+    {
+        $user_id    =   addslashes($_POST ['user_id']);
+        $email      =   addslashes($_POST ['email']);
+        $password   =   addslashes($_POST ['password']);
+
+        
+        $u = new Usuario;
+        
+        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","gabriel_write","d22d05d99");
+        
+        echo $u->msgErro;
+
+        if($u->msgErro == "") //nenhum erro 
+        {
+            if($u->cadastrar($user_id,$email,$password))
+            {
+                echo "Cadastro Realizado com Sucesso! Acesse para entrar";
+            }
+            else
+            {
+                echo "E-mail já cadastrado!";
+            }
+        }
+        else
+        {
+           echo "Erro: ".$u->msgErro; 
+           echo "olá?";
+        }
+       
+    }
+
+
+    ?>
 </body>
 </html>
