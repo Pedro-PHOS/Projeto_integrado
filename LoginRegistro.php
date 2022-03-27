@@ -256,7 +256,7 @@
         
         $u = new Usuario;
         
-        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","gabriel_write","d22d05d99");
+        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","","");
         
         echo $u->msgErro;
 
