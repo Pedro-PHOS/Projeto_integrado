@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css\LoginRegistro.css">
-    <title>Web World - Login e Registro</title>
+    <title>Infotech  Login e Registro</title>
 </head>
 
 <body background="" style="background-repeat: no-repeat; background-position: center; background-size: cover">
@@ -230,11 +230,7 @@
             const formslogin = x
             const formsloginRegister = y
             
-            formslogin.addEventListener('submit',function(event){
-
-            event.preventDefault()
- 
-            })
+           
             formsloginRegister.addEventListener('submit',function(event){
 
             event.preventDefault()
