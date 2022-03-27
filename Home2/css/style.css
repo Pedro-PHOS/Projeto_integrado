@@ -51,17 +51,12 @@ header{
     border-bottom: 1px solid gray;
 }
 
+
 .slider-principal{
     position: relative;
     width: 100%;
     height: 80vh;
 }
-
-.slider-principal img{
-    max-width: 100%;
-    max-width: 100%;
-}
-
 button.slick-prev{
     font-size: 0px;
     border: none;
@@ -111,4 +106,49 @@ ul.slick-dots li{
 }
 .slick-initialized{
     overflow: hidden;
+}
+
+/* Imagens abaixo do slider*/
+
+
+#content{
+    margin: 0 auto;
+    margin-top: 4vh;
+    width: 980px;
+    height: 543px;
+    text-align: center;
+}
+#content strong{
+    color: #646464;
+}
+#content h1{
+    font-size: 40px;
+    color: #818181;
+    text-transform: uppercase;
+}
+#content p{
+    font-size: 25px;
+    color: #9a9a9a;
+}
+
+/*Ainda por identificar*/
+.col-3{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    width: 30%;
+    float: left;
+    position: relative;
+    
+}
+.col-3 h2{
+    border-bottom: 500px;
+    margin-top: 10px;
+    color: #848484;
+}
+.col-3 p{
+    color: #c2c2c2;
+}
+.col-3 strong{
+    color: #7b7b7b;
 }
