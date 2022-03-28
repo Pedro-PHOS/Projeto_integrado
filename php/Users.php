@@ -10,12 +10,12 @@ class Usuario {
         global $pdo;
         try
         {
-            $pdo = new PDO("sqlsrv:dbname=".$dbName.";host=".$serverAddress,$dbuser,$dbpass);
+            $pdo = new PDO("sqlsrv:Server=".$serverAddress.";Database=".$dbName,$dbuser,$dbpass);
         } catch (PDOException $e) 
         {
             global $msgErro; 
             //$msgErro = $e->getMessage();
-            $msgErro = $e;
+            $msgErro = throw new PDOException($e);
         }
     }
     
@@ -25,7 +25,7 @@ class Usuario {
 
         //Verificando cadastro baseado no e-mail 
         
-        $sql = $pdo->prepare("SELECT local_id FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e");
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e");
         $sql->bindValue(":e",$email);
         $sql->execute();
 
@@ -52,7 +52,7 @@ class Usuario {
 
         // Verificar senha e email no db
 
-        $sql = $pdo->prepare("SELECT local_id FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :i AND [userPass] = :p");
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :i AND [userPass] = :p");
         $sql->bindValue(":i",$user_id);
         $sql->bindValue(":p",$password);
         $sql->execute();
@@ -62,7 +62,7 @@ class Usuario {
             //Acesso OK - Match no db e cria sessao
             $dado = $sql->fetch();
             session_start();
-            $_SESSION['local_id'] = $dado['local_id'];
+            $_SESSION['localid'] = $dado['localid'];
             
             return true;
         }
