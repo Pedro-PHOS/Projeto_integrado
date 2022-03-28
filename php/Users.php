@@ -25,7 +25,7 @@ class Usuario {
 
         //Verificando cadastro baseado no e-mail 
         
-        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e");
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
         $sql->bindValue(":e",$email);
         $sql->execute();
 
@@ -52,7 +52,7 @@ class Usuario {
 
         // Verificar senha e email no db
 
-        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :i AND [userPass] = :p");
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :i AND [userPass] = :p",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
         $sql->bindValue(":i",$user_id);
         $sql->bindValue(":p",$password);
         $sql->execute();
