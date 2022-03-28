@@ -28,7 +28,7 @@
                     <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Remember Password</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
+                    <button name="button" value="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
                 </form>
 
                 <form id="Register" class="input-group" method="post">
@@ -36,7 +36,7 @@
                     <input type="email" name="email" class="input-field" placeholder="E-mail ID" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" require/><span>I Agree to The Terms & Conditions</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Register</button>
+                    <button name="button" value="register" type="submit" class="submit-btn" style="color: aliceblue">Register</button>
                 </form>
             </div>
 
@@ -249,32 +249,38 @@
 
     if(isset($_POST['user_id']))
     {
-        $user_id    =   addslashes($_POST ['user_id']);
-        $email      =   addslashes($_POST ['email']);
-        $password   =   addslashes($_POST ['password']);
 
-        
         $u = new Usuario;
         
-        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","","");
-        
-        echo $u->msgErro;
+        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","usr_php_read","@fWGo@MrauLc");
 
         if($u->msgErro == "") //nenhum erro 
         {
-            if($u->cadastrar($user_id,$email,$password))
+            if($_POST['button']=='register')
             {
-                echo "Cadastro Realizado com Sucesso! Acesse para entrar";
+            
+            $user_id    =   addslashes($_POST ['user_id']);
+            $email      =   addslashes($_POST ['email']);
+            $password   =   addslashes($_POST ['password']);
+            
+                if($u->cadastrar($user_id,$email,$password))
+                {
+                    echo "Cadastro Realizado com Sucesso! Acesse para entrar";
+                }
+                else
+                {
+                    echo "E-mail já cadastrado!";
+                }
+
             }
-            else
-            {
-                echo "E-mail já cadastrado!";
-            }
+        
+
+        
+            
         }
         else
         {
            echo "Erro: ".$u->msgErro; 
-           echo "olá?";
         }
        
     }
