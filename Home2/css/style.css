@@ -11,6 +11,7 @@ a {
 }
 
 header{
+    background-color: white;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -37,7 +38,7 @@ header{
     background-image: url('https://github.com/Pietrodo-Code/Projeto_integrado/blob/main/Assets/Home/busca.png?raw=true');
     background-repeat: no-repeat;
     background-position: 95%;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #555555;
 }
 
 .menu_header{
@@ -48,7 +49,8 @@ header{
 }
 
 .menu_header :hover{
-    border-bottom: 1px solid gray;
+    color: #555555;
+    border-bottom: 1px solid #555555;
 }
 
 
@@ -99,7 +101,7 @@ ul.slick-dots{
     top: 90%;
 }
 ul.slick-dots li.slick-active button{
-    background: #08bcc8;
+    background: #555555;
 }
 ul.slick-dots li{
     display: inline-block;
@@ -109,46 +111,30 @@ ul.slick-dots li{
 }
 
 /* Imagens abaixo do slider*/
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    height: 80vh;
+}
+#sobre p{
+    width: 70%;
+}
 
-
-#content{
-    margin: 0 auto;
-    margin-top: 4vh;
-    width: 980px;
-    height: 543px;
+#sobre_cursos p{
     text-align: center;
-}
-#content strong{
-    color: #646464;
-}
-#content h1{
-    font-size: 40px;
-    color: #818181;
-    text-transform: uppercase;
-}
-#content p{
-    font-size: 25px;
-    color: #9a9a9a;
+    width: 100%;
 }
 
-/*Ainda por identificar*/
-.col-3{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    width: 30%;
-    float: left;
-    position: relative;
-    
-}
-.col-3 h2{
-    border-bottom: 500px;
-    margin-top: 10px;
-    color: #848484;
-}
-.col-3 p{
-    color: #c2c2c2;
-}
-.col-3 strong{
-    color: #7b7b7b;
+
+.footer{
+    color: white;
+    width: 100%;
+    background-color: #555555;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
