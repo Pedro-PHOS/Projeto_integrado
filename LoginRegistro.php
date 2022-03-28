@@ -28,7 +28,7 @@
                     <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Remember Password</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
+                    <button name="button" value ="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
                 </form>
 
                 <form id="Register" class="input-group" method="post">
@@ -36,7 +36,7 @@
                     <input type="email" name="email" class="input-field" placeholder="E-mail ID" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" require/><span>I Agree to The Terms & Conditions</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Register</button>
+                    <button name="button" value="register" type="submit" class="submit-btn" style="color: aliceblue">Register</button>
                 </form>
             </div>
 
