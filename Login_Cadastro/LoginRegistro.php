@@ -1,11 +1,14 @@
-﻿<!--Header Padr�o-->
+﻿<?php 
+    require_once 'php/Users.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css\LoginRegistro.css">
-    <title>Web World - Login e Registro</title>
+    <title>Infotech  Login e Registro</title>
 </head>
 
 <body background="" style="background-repeat: no-repeat; background-position: center; background-size: cover">
@@ -22,18 +25,18 @@
                 <button type="button" class="toggle-btn" onclick="Register()">Register</button>
 
                 <form id="Login" class="input-group" method="post">
-                    <input type="text" class="input-field" placeholder="User id" required />
-                    <input type="text" class="input-field" placeholder="Enter Password" required />
+                    <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Remember Password</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
+                    <button name="button" value ="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
                 </form>
 
                 <form id="Register" class="input-group" method="post">
-                    <input type="text" class="input-field" placeholder="User id" required />
-                    <input type="email" class="input-field" placeholder="E-mail ID" required />
-                    <input type="text" class="input-field" placeholder="Enter Password" required />
-                    <input type="checkbox" class="check-box" /><span>I Agree to The Terms & Conditions</span>
-                    <button type="submit" class="submit-btn" style="color: aliceblue">Register</button>
+                    <input type="text" name ="user_id" class="input-field" placeholder="User id" required />
+                    <input type="email" name="email" class="input-field" placeholder="E-mail ID" required />
+                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
+                    <input type="checkbox" class="check-box" require/><span>I Agree to The Terms & Conditions</span>
+                    <button name="button" value="register" type="submit" class="submit-btn" style="color: aliceblue">Register</button>
                 </form>
             </div>
 
@@ -51,7 +54,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Linux.png" />
+                                <img src=".img\Linux.png" />
 
                                 <h1 class="Bloco-Title">
                                     Linux
@@ -70,7 +73,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Office.png" />
+                                <img src=".img\Office.png" />
 
                                 <h1 class="Bloco-Title">
                                     Office
@@ -89,7 +92,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Windows.png" />
+                                <img src=".img\Windows.png" />
 
                                 <h1 class="Bloco-Title">
                                     Windows
@@ -108,7 +111,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\python.png" />
+                                <img src=".img\python.png" />
 
                                 <h1 class="Bloco-Title">
                                     Python
@@ -127,7 +130,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\csharp.png" />
+                                <img src=".img\csharp.png" />
 
                                 <h1 class="Bloco-Title">
                                     C#
@@ -146,7 +149,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Adobe.png" />
+                                <img src=".img\Adobe.png" />
 
                                 <h1 class="Bloco-Title">
                                     Adobe Pack
@@ -165,7 +168,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Redes.png" />
+                                <img src=".img\Redes.png" />
 
                                 <h1 class="Bloco-Title">
                                     Redes
@@ -184,7 +187,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\Infraestrutura.png" />
+                                <img src=".img\Infraestrutura.png" />
 
                                 <h1 class="Bloco-Title">
                                     Infraestrutura
@@ -203,7 +206,7 @@
                             <div class="box-header"></div>
 
                             <div class="icon">
-                                <img src="C:\Users\Bruno Rafael\Downloads\WebSite-estudo--main\Site\Home\img\sec.png" />
+                                <img src=".img\sec.png" />
 
                                 <h1 class="Bloco-Title">
                                     Infosec
@@ -221,10 +224,11 @@
         </div>
 
         <script>
-            var x = document.getElementById("Login");
-            var y = document.getElementById("Register");
-            var z = document.getElementById("btn");
-
+          var x = document.getElementById("Login");
+          var y = document.getElementById("Register");
+          var z = document.getElementById("btn");
+    
+            
             function Register() {
                 x.style.left = "-400px";
                 y.style.left = "-28px";
@@ -237,6 +241,45 @@
                 z.style.left = "0";
             }
 
+
         </script>
+
+    <?php 
+    //Validar o clique no botão
+
+    if(isset($_POST['user_id']))
+    {
+        $user_id    =   addslashes($_POST ['user_id']);
+        $email      =   addslashes($_POST ['email']);
+        $password   =   addslashes($_POST ['password']);
+
+        
+        $u = new Usuario;
+        
+        $u->conectar("dbLoginProjeto","dbprojetohtml.cegtexfrqfwu.sa-east-1.rds.amazonaws.com","","");
+        
+        echo $u->msgErro;
+
+        if($u->msgErro == "") //nenhum erro 
+        {
+            if($u->cadastrar($user_id,$email,$password))
+            {
+                echo "Cadastro Realizado com Sucesso! Acesse para entrar";
+            }
+            else
+            {
+                echo "E-mail já cadastrado!";
+            }
+        }
+        else
+        {
+           echo "Erro: ".$u->msgErro; 
+           echo "olá?";
+        }
+       
+    }
+
+
+    ?>
 </body>
 </html>
