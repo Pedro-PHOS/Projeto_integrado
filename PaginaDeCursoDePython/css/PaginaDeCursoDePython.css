@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Roboto:wght@100&display=swap');
+*{
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+@keyframes HeaderSlideAnimation{
+    0%{
+        transform: translateY(-1500px);
+    }
+    100%{
+        transform: translateY(240deg);
+    }
+}
+
+
+html{
+    font-family: 'IBM Plex Sans Arabic';
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+.logoComTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.textContent h1{
+    text-align: center;
+    animation: HeaderSlideAnimation .8s ease;
+}
+
+.logoComTitulo img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#Hero{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.527)), url('./BannerInicialPaginaCurso.png') no-repeat center/cover;
+    color: white;
+}
+
+/*Container do Texto incluso no banner do trecho inicial da página*/
+.Container{ 
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container .textContent .logoComTitulo{
+    animation: HeaderSlideAnimation .6s ease;
+    
+}
+.Container .textContent h2{
+    animation: HeaderSlideAnimation .8s ease;
+ 
+}
+
+.Container .textContent p{
+    text-align: center;
+    animation: HeaderSlideAnimation 1s ease;
+}
+
+.Container .textContent a{
+text-decoration: none;
+background-color: white;
+display: inline-block;
+border-radius: 4px;
+font-size: 1.2rem;
+padding: 0.2em 2em;
+margin-top: 2rem;
+color: rgb(36, 161, 202);
+justify-content:right;
+animation: HeaderSlideAnimation 1.4s ease;
+}
+
+/*Abaixo, segue o código por tornar o texto da página responsivo*/
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 15px;
+    }
+}
+
+.PageBody{
+    margin: 0 auto;
+    
+    line-height: 40px;
+    text-align: justify;
+    width: 70%;
+}
+
+.PageBody .TituloTexto{
+    margin-top: 50px;
+}
+
+.linkCursos{
+    margin-left: 15%;
+    margin-top: 45px;
+}
+
+.linkCursos .CursoflexElements{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.linkCursos .CursoflexElements img{
+    width: 470px;
+    height: 225px;
+
+}
+
+.linkCursos .CursoFlexColumn{
+    color: black;
+    line-height: 40px;
+    margin: 5px;
+    margin-left: 38px;
+    text-align: justify;
+    width: 45%;
+
+}
