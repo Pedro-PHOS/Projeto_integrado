@@ -1,0 +1,140 @@
+*{margin: 0;}
+
+li {
+    list-style-type: none;
+    font-size: 3vw;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px black solid;
+    border-width: 100%;
+}
+
+#logo{
+    max-width: 70%;
+    margin-left: 5%;
+}
+
+#search{
+    height: 30%;
+    width: 70%;
+    margin-bottom: 2vh;
+}
+#search_input{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-image: url('https://github.com/Pietrodo-Code/Projeto_integrado/blob/main/Assets/Home/busca.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    border: 1px solid #555555;
+}
+
+.menu_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu_header :hover{
+    color: #555555;
+    border-bottom: 1px solid #555555;
+}
+
+
+.slider-principal{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url('https://github.com/Pietrodo-Code/Projeto_integrado/blob/a67fe5eb8879a53d2dd48bd3ca523d3b78942b11/Assets/Home/anterior.png?raw=true');
+    position: absolute;
+    left: 45px;
+    z-index: 9;
+    top: 35%;
+}
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    background-image: url('https://github.com/Pietrodo-Code/Projeto_integrado/blob/a67fe5eb8879a53d2dd48bd3ca523d3b78942b11/Assets/Home/seguinte.png?raw=true');
+    position: absolute;
+    z-index: 9;
+    right: 45px;
+    top: 35%;
+}
+ul.slick-dots li button{
+    font-size: 0px;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+    margin: 2px;
+}
+ul.slick-dots{
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 90%;
+}
+ul.slick-dots li.slick-active button{
+    background: #555555;
+}
+ul.slick-dots li{
+    display: inline-block;
+}
+.slick-initialized{
+    overflow: hidden;
+}
+
+/* Imagens abaixo do slider*/
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    height: 80vh;
+}
+#sobre p{
+    width: 70%;
+}
+
+#sobre_cursos p{
+    text-align: center;
+    width: 100%;
+}
+
+
+.footer{
+    color: white;
+    width: 100%;
+    background-color: #555555;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
