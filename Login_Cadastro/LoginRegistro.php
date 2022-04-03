@@ -273,7 +273,22 @@
                 }
 
             }
-        
+            if($_POST['button']=='login')
+            {
+            
+            $user_id    =   addslashes($_POST ['user_id']);
+            $password   =   addslashes($_POST ['password']);
+            
+                if($u->logar($user_id,$password))
+                {
+                    echo "Login Realizado com Sucesso";
+                }
+                else
+                {
+                    echo "E-mail ou Senha não conferem";
+                }
+
+            }
 
         
             

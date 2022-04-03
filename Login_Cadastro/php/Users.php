@@ -57,12 +57,15 @@ class Usuario {
         $sql->bindValue(":p",$password);
         $sql->execute();
 
+     
+        
+
         if ($sql->rowCount()>0) 
         {
             //Acesso OK - Match no db e cria sessao
-            $dado = $sql->fetch();
-            session_start();
-            $_SESSION['localid'] = $dado['localid'];
+            $dado = $sql->fetch(PDO::FETCH_ASSOC);
+            //session_start();
+            //$_SESSION['localid'] = $dado['localid'];
             
             return true;
         }
