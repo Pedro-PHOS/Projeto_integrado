@@ -52,7 +52,7 @@ class Usuario {
 
         // Verificar senha e email no db
 
-        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :i AND [userPass] = :p",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userId] = :i AND [userPass] = :p",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
         $sql->bindValue(":i",$user_id);
         $sql->bindValue(":p",$password);
         $sql->execute();
@@ -64,9 +64,10 @@ class Usuario {
         {
             //Acesso OK - Match no db e cria sessao
             $dado = $sql->fetch(PDO::FETCH_ASSOC);
-            //session_start();
-            //$_SESSION['localid'] = $dado['localid'];
-            
+           
+            session_id($dado['localid']);
+            session_start();
+                        
             return true;
         }
         else
