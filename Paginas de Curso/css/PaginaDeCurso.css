@@ -15,10 +15,31 @@
 }
 
 
+
 html{
     font-family: 'IBM Plex Sans Arabic';
     font-size: 18px;
     scroll-behavior: smooth;
+}
+
+.navHeader{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+.navHeader-LinksDiv{
+    margin-left: 20px;
+}
+
+.navHeader img{
+    width: 120px;
+}
+#Hero{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.527)), url('./BannerInicialPaginaCurso.png') no-repeat center/cover;
+    color: white;
 }
 
 .logoComTitulo{
@@ -37,13 +58,6 @@ html{
     width: 35px;
     height: 35px;
     margin-right: 10px;
-}
-
-#Hero{
-    width:100%;
-    height: 100vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.527)), url('./BannerInicialPaginaCurso.png') no-repeat center/cover;
-    color: white;
 }
 
 /*Container do Texto incluso no banner do trecho inicial da página*/
@@ -84,19 +98,11 @@ justify-content:right;
 animation: HeaderSlideAnimation 1.4s ease;
 }
 
-/*Abaixo, segue o código por tornar o texto da página responsivo*/
-@media only screen and (max-width: 768px){
-    html{
-        font-size: 15px;
-    }
-}
-
 .PageBody{
     margin: 0 auto;
-    
     line-height: 40px;
     text-align: justify;
-    width: 70%;
+    width: 85%;
 }
 
 .PageBody .TituloTexto{
@@ -104,7 +110,7 @@ animation: HeaderSlideAnimation 1.4s ease;
 }
 
 .linkCursos{
-    margin-left: 15%;
+    margin-left: 8%;
     margin-top: 45px;
 }
 
@@ -128,4 +134,74 @@ animation: HeaderSlideAnimation 1.4s ease;
     text-align: justify;
     width: 45%;
 
+}
+
+@media (max-width: 1059px){
+    #TituloTextoCursosPython{
+        width: 450px;
+        margin: 0 auto;
+
+    }
+    .linkCursos{
+        width: 450px;
+    }
+    .linkCursos .CursoflexElements{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .linkCursos .CursoFlexColumn{
+        color: black;
+        line-height: 40px;
+        margin: 5px;
+        text-align: justify;
+        width: 450px;
+    }
+
+    
+}
+
+@media (max-width: 500px) And (min-width: 100px) {
+    #Hero{
+        width: 500px;
+    }
+
+    .TituloTextoCursosPython{
+        width: 450px;
+        margin: 0 auto;
+
+    }
+
+    .linkCursos{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .linkCursos .CursoflexElements{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .linkCursos .CursoFlexColumn{
+        color: black;
+        line-height: 40px;
+        margin: 5px;
+        text-align: justify;
+        width: 450px;
+    }
+
+    .PageBody{
+        margin: 0 auto;
+        line-height: 40px;
+        text-align: justify;
+        width: 85%;
+        width: 400px;
+        line-break: auto;
+    
+    }
+    
+    .PageBody .TituloTexto{
+        margin-top: 50px;
+    }
 }
