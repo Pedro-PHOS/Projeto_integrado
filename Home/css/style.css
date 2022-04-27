@@ -1,0 +1,227 @@
+* {margin: 0px;}
+
+#section_01{
+    background-image: url(/Home/assets/Backgorund/Background.jpg);
+    background-size:cover;
+    background-repeat:round;
+    background-color: rgba(0, 38, 109, 0.952);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo img{
+    margin-top: 1vh;
+    width: 30vh;
+}
+
+.search_bar{
+    height: 2vh;
+    width: 23vw;
+    margin-bottom: 2vh;
+    margin-right: 5vh;
+}
+.search_input{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-image: url('https://github.com/Pietrodo-Code/Projeto_integrado/blob/main/Assets/Home/busca.png?raw=true');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.menu{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.9) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    font-size: 4vh;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9) ;
+}
+
+.menu :hover{
+    color: rgb(255, 255, 255) ;
+}
+
+#home{  
+    display: flex;
+    justify-content: center;
+}
+
+.sobre{
+    color: white;
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobre h1{
+    font-size: 8vh;
+}
+
+.sobre p{
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+.icon{
+    width: 50%;
+}
+
+#section_02{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat:round;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+#cursos_tittle{
+    margin-top: 4vh;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#cursos_tittle h1{
+    font-size: 7vh;
+}
+
+
+footer{
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f1d3a;
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px){
+    #section_01{
+        background-image: url(/Home/assets/Backgorund/Background_01.jpg);
+    }
+    
+    .logo img{
+        width: 20vh;
+    }
+
+    .menu{
+        font-size: 3vh;
+    }
+
+    .search_bar{
+        height: 1vh;
+        width: 25vw;
+    }
+    #home{
+        flex-direction: column;
+    }
+
+    .sobre{
+        width: 80%;
+        align-self: center;
+    }
+
+    .icon{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
+ 
+    .logo img{
+        width: 20vh;
+    }
+
+    .menu{
+        font-size: 3vh;
+    }
+
+    .search_bar{
+        height: 1vh;
+        width: 25vw;
+    }
+
+    .sobre{
+        height: 65vh;
+    }
+}
+
+@media (max-width: 425px){
+ 
+    #logo img{
+        width: 11vh;
+    }
+
+    .menu{
+        font-size: 2vh;
+    }
+
+    .search_bar{
+        height: 0.2vh;                                   
+        width: 15vw;
+    }
+
+    .sobre{
+        color: white;
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .sobre h1{
+        font-size: 5vh;
+    }
+    
+    .sobre p{
+        font-size: 2vh;
+        margin-top: 1vh;
+    }
+}
