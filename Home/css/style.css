@@ -38,26 +38,29 @@ header{
     background-color: transparent;
     color: white;
 }
-
 .menu{
+    width: 25%;
+}
+
+.options{
     list-style: none;
     text-decoration: none;
     color: rgb(255, 255, 255, 0.9) ;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
     font-size: 4vh;
 }
 
-.menu a{
+.options a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9) ;
 }
 
-.menu :hover{
+.options :hover{
     color: rgb(255, 255, 255) ;
 }
+
 
 #home{  
     display: flex;
@@ -98,7 +101,7 @@ header{
     flex-direction: column;
 }
 
-#cursos_tittle{
+.cursos_tittle{
     margin-top: 4vh;
     width: 80%;
     justify-content: center;
@@ -106,10 +109,51 @@ header{
     text-align: center;
 }
 
-#cursos_tittle h1{
+.cursos_tittle h1{
     font-size: 7vh;
 }
 
+.content_02{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.illustration{
+    width: 40%;
+}
+
+.illustration img{
+    max-width: 100%;
+}
+
+.text_02{
+    width: 50%;
+    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button_cursos {
+    align-self: center;
+    display: flex;
+    background-color: #0f1d3a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 40%;
+    height: 8vh;
+    border-color: white;
+    border-style: groove;
+    margin-top: 8vh;
+}
+
+.button_cursos a{
+    color: white;
+    text-decoration: none;
+}
 
 footer{
     font-size: 2vh;
@@ -121,14 +165,6 @@ footer{
     height: 10vh;
     color: white;
 }
-
-
-
-
-
-
-
-
 
 
 
