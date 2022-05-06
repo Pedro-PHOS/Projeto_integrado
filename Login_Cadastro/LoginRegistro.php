@@ -10,7 +10,21 @@
     <link rel="stylesheet" type="text/css" href="css\LoginRegistro.css">
     <title>Infotech  Login e Registro</title>
 </head>
+<body>
 
+<div id="section_01">
+        <header>
+            <div class="logo">
+                <img src="/Home/assets/Logo.png" alt="">
+            </div>
+
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="../Login_Cadastro/LoginRegistro.php">Login</a></li>
+
+            </div>
+        </header>
 
         <!--Início do código do formulário de cadastro e registro-->
         
@@ -48,7 +62,7 @@
     
             
             function Register() {
-                x.style.left = "-1200px";
+                x.style.left = "-1800px";
                 y.style.left = "-28px";
                 z.style.left = "110px";
             }
@@ -56,7 +70,7 @@
             function Login() {
                 x.style.left = "120px";
                 y.style.left = "450px";
-                z.style.left = "0";
+                z.style.left = "0px";
             }
 
 

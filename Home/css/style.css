@@ -1,4 +1,6 @@
-* {margin: 0px;}
+* {margin: 0px;
+    font-family: 'Mulish', sans-serif;
+}
 
 header{
     display: flex;
@@ -135,9 +137,6 @@ header{
     text-decoration: none;
 }
 
-.button_cursos :hover{
-    background-color: #224180;
-}
 
 footer{
     font-size: 2vh;
