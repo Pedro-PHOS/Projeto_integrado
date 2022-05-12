@@ -1,6 +1,4 @@
-* {margin: 0px;
-    font-family: 'Mulish', sans-serif;
-}
+* {margin: 0px;}
 
 header{
     display: flex;
@@ -13,7 +11,7 @@ header{
 
 
 #section_01{
-    background-image: url(../assets/Backgorund/Background.jpg);
+    background-image: url(/Home/assets/Backgorund/Background.jpg);
     background-size:cover;
     background-repeat:round;
     background-color: rgba(0, 38, 109, 0.952);
@@ -137,7 +135,6 @@ header{
     text-decoration: none;
 }
 
-
 footer{
     font-size: 2vh;
     display: flex;
@@ -149,17 +146,18 @@ footer{
     color: white;
 }
 
+
 @media (max-width: 1100px){
     #section_01{
-        background-image: url(../assets/Backgorund/Background_01.jpg);
+        background-image: url(/Home/assets/Backgorund/Background_01.jpg);
     }
     
     .logo img{
-        width: 20vh;
+        width: 20vw;
     }
 
     .menu{
-        font-size: 3vh;
+        font-size: 3vw;
     }
 
     #home{
@@ -176,9 +174,9 @@ footer{
     }
 
     .text_02{
-        margin-top: 10vh;
+        margin-top: 10vw;
         width: 50%;
-        font-size: 3vh;
+        font-size: 3vw;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -190,24 +188,24 @@ footer{
 @media (max-width: 530px){
     
     .logo img{
-        width: 20vh;
+        width: 20vw;
     }
 
     .menu{
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
     .sobre{
-        height: 60vh;
+        height: 60vw;
     }
 
     .sobre h1{
-        font-size: 6vh;
+        font-size: 6vw;
     }
     
     .sobre p{
-        font-size: 2vh;
-        margin-top: 1vh;
+        font-size: 2vw;
+        margin-top: 1vw;
     }
 
     .icon{
@@ -215,13 +213,13 @@ footer{
     }
 
     #section_02{
-        height: 70vh;
+        height: 70vw;
     }
     
     .text_02{
-        margin-top: 6vh;
+        margin-top: 6vw;
         width: 50%;
-        font-size: 2vh;
+        font-size: 2vw;
         display: flex;
         flex-direction: column;
         text-align: center;
