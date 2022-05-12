@@ -183,8 +183,6 @@ footer{
     }
 }
 
-
-
 @media (max-width: 530px){
     
     .logo img{
@@ -216,6 +214,10 @@ footer{
         height: 70vw;
     }
     
+    .cursos_tittle h1{
+        font-size: 5vw;
+    }
+    
     .text_02{
         margin-top: 6vw;
         width: 50%;
@@ -223,5 +225,15 @@ footer{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .button_cursos {
+        width: 60%;
+        height: 6vw;
+    }
+
+    footer{
+        font-size: 2vw;
+        height: 10vw;
     }
 }
