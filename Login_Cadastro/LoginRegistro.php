@@ -32,7 +32,7 @@
             
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="Login()">Entrar</button>
+                <button type="button" class="toggle-btn" onclick="Login()">Entrar 2</button>
                 <button type="button" class="toggle-btn" onclick="Register()">Registrar</button>
 
                 <form id="Login" class="input-group" method="post">
