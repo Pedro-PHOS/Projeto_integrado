@@ -32,11 +32,11 @@
             
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="Login()">Entrar 2</button>
+                <button type="button" class="toggle-btn" onclick="Login()">Entrar</button>
                 <button type="button" class="toggle-btn" onclick="Register()">Registrar</button>
 
                 <form id="Login" class="input-group" method="post">
-                    <input type="text"  name="user_id" class="input-field" placeholder="User id 2" required />
+                    <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Lembrar Senha</span>
                     <button name="button" value="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
@@ -65,8 +65,8 @@
                 /*x.style.left = "-1800px";
                 y.style.left = "-28px";
                 z.style.left = "110px";*/
-                x.style.left = "-400px";
-                y.style.left = "50px";
+                x.style.left = "-1800px";
+                y.style.left = "0px";
                 z.style.left = "110px";
             }
 
@@ -74,9 +74,9 @@
                 /*x.style.left = "120px";
                 y.style.left = "450px";
                 z.style.left = "0px";*/
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
+                x.style.left = "0px";
+                y.style.left = "800px";
+                z.style.left = "0px";
             }
 
 
