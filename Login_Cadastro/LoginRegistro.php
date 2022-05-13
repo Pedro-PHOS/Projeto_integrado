@@ -19,7 +19,7 @@
             </div>
 
             <div class="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../Home/index.html">Home</a></li>
                 <li><a href="#">Cursos</a></li>
                 <li><a href="../Login_Cadastro/LoginRegistro.php">Login</a></li>
 
@@ -36,7 +36,7 @@
                 <button type="button" class="toggle-btn" onclick="Register()">Registrar</button>
 
                 <form id="Login" class="input-group" method="post">
-                    <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
+                    <input type="text"  name="user_id" class="input-field" placeholder="User id 2" required />
                     <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
                     <input type="checkbox" class="check-box" /><span>Lembrar Senha</span>
                     <button name="button" value="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
@@ -62,15 +62,21 @@
     
             
             function Register() {
-                x.style.left = "-1800px";
+                /*x.style.left = "-1800px";
                 y.style.left = "-28px";
+                z.style.left = "110px";*/
+                x.style.left = "-400px";
+                y.style.left = "50px";
                 z.style.left = "110px";
             }
 
             function Login() {
-                x.style.left = "120px";
+                /*x.style.left = "120px";
                 y.style.left = "450px";
-                z.style.left = "0px";
+                z.style.left = "0px";*/
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
             }
 
 
