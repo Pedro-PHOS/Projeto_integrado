@@ -62,18 +62,12 @@
     
             
             function Register() {
-                /*x.style.left = "-1800px";
-                y.style.left = "-28px";
-                z.style.left = "110px";*/
                 x.style.left = "-1800px";
                 y.style.left = "0px";
                 z.style.left = "110px";
             }
 
             function Login() {
-                /*x.style.left = "120px";
-                y.style.left = "450px";
-                z.style.left = "0px";*/
                 x.style.left = "0px";
                 y.style.left = "800px";
                 z.style.left = "0px";
