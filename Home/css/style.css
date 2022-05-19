@@ -11,7 +11,7 @@ header{
 
 
 #section_01{
-    background-image: url(/Home/assets/Backgorund/Background.jpg);
+    background-image: url("https://github.com/Pietrodo-Code/Projeto_integrado/blob/Homologa%C3%A7%C3%A3o/Home/assets/Backgorund/Background.jpg?raw=true");
     background-size:cover;
     background-repeat:round;
     background-color: rgba(0, 38, 109, 0.952);
@@ -149,7 +149,7 @@ footer{
 
 @media (max-width: 1100px){
     #section_01{
-        background-image: url(/Home/assets/Backgorund/Background_01.jpg);
+        background-image: url("https://github.com/Pietrodo-Code/Projeto_integrado/blob/Homologa%C3%A7%C3%A3o/Home/assets/Backgorund/Background_01.jpg?raw=true");
     }
     
     .logo img{
@@ -194,7 +194,7 @@ footer{
     }
 
     .sobre{
-        height: 60vw;
+        height: 80vw;
     }
 
     .sobre h1{
@@ -211,7 +211,7 @@ footer{
     }
 
     #section_02{
-        height: 70vw;
+        height: 80vw;
     }
     
     .cursos_tittle h1{
