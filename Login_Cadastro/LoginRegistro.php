@@ -15,14 +15,14 @@
 <div id="section_01">
         <header>
             <div class="logo">
-                <img src="/Home/assets/Logo.png" alt="">
+                <img src="../Login_Cadastro/img/Logo.png" alt="">
             </div>
 
             <div class="menu">
                 <li><a href="../Home/index.html">Home</a></li>
                 <li><a href="#">Cursos</a></li>
                 <li><a href="../Login_Cadastro/LoginRegistro.php">Login</a></li>
-
+                <li><a href="../Pagina_Sobre/pagina_sobre.php">Sobre</a></li>
             </div>
         </header>
 

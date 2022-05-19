@@ -14,9 +14,9 @@ header{
     background-color: #0f1d3a;
 }
 
+
 .logo img{
-    margin-top: 1vh;
-    width: 30vh;
+    width: 180px;
 }
 
 .menu{
@@ -36,7 +36,7 @@ header{
 }
 
 .menu :hover{
-    color: rgb(255, 255, 255) ;
+    color: white ;
 }
 
 .form-box {

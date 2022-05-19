@@ -12,11 +12,12 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 60px;
+    height: 10vh;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(0, 38, 109, 0.952);
+    background-color: #0f1d3a;
 }
+
 
 .logo img{
     width: 180px;
@@ -35,57 +36,105 @@ header{
 
 .menu a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) ;
 }
 
 .menu :hover{
-    color: rgb(255, 255, 255);
-    background-color: black;
-    transition: 0.3s;
-    border-radius: 5px;
-    padding: 2px 3px;
+    color: white ;
+}
+
+.featurette-divider{
+    border: none;
+    height: 90px;
 }
 
 
 
-.titulo-sobre{
-    flex-grow: 1;
+.col-md-7{
+    width: 700px;
+}
+
+.nome_pessoa p{
+    top: 50px;
+}
+
+.img_pessoa{
+    width: 200px;
+    height: 200px;
+    transform: translateX(1000px);
+    transform: translateY();
+}
+.img_pessoa img{
+    border-radius: 100px;
+}
+
+.text-muted{
+    font-size: 2.3rem;
+    Font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+}
+.lead{
+    font-size: 1.5rem;
+    transform: translateY(150px);
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    
+}
+
+#section_01{
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#section_02{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat:round;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;  
-    font-family: 'Mulish', sans-serif;
-    border: 10px;
+    background-color: #0f1d3a;
+    color: white;
+    text-align: center;
 }
 
-.titulo-sobre h1{
+#section_03{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat:round;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    font-size: 7rem;
-    font-weight: 400;
-    line-height:4.5rem;
+    background-color: white;
     color: black;
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    text-align: center;
 }
 
-.sobre-text{
-    font-size: 3.1rem;
-    color: var(--accent-color);
-    font-style: italic;
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+#section_04{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat:round;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
 }
 
-.sobre-text{
-    font-weight: lighter;
-    width: 600px;
-    font-size: 1.2rem;
-    color: black;
-    Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-}
-
-.titulo-sobre h1 span{
-    font-size: 2.5rem;
-    font-weight: 200;
+#section_05{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat:round;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -134,14 +183,14 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid black;
     transition: all 0.7s;
 }
 
 
 .social-container a:hover{
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: black;
+    border-color: blue;
 }
 
 .social-container i{
