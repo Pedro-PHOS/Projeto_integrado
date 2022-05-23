@@ -20,13 +20,11 @@ header{
 }
 .menu{
     list-style: none;
-    text-decoration: none;
-    color: rgb(255, 255, 255, 0.9) ;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 60%;
-    font-size: 4vh;
+    font-size: 2vw;
 }
 .menu a{
     text-decoration: none;
@@ -93,8 +91,23 @@ header{
 }
 
 .comments {
+    height: 200px;
+    width: 100%;
     text-align: center;
     font-size: x-large;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+@media (max-width: 1305px){
+    .container {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 900px){
+    .menu li a{
+        font-size: 444vw;
+    }
+
 }
