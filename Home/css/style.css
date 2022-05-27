@@ -171,14 +171,6 @@ footer{
         width: 100%;
     }
 
-    .text_02{
-        margin-top: 10vw;
-        width: 50%;
-        font-size: 3vw;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 @media (max-width: 530px){

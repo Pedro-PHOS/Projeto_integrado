@@ -25,17 +25,17 @@
     </header>
 
     <main>
-        <div id="section_01">
+        <div id="section_01" class="section">
             <hr class="featurette-divider">
 
                 <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="nome_pessoa">
+                    <h2 class="nome_pessoaG">
                         <span class="text-muted"> GABRIEL PALMA DE OLIVEIRA </span>
                         </h2>   
-                    <p class="lead">Gabriel é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br> Trabalha atualmente com Power BI, Banco de dados e Ciência de dados.</p>
+                    <p class="leadG">Gabriel é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br> Trabalha atualmente com Power BI, Banco de dados e Ciência de dados.</p>
                 </div>
-                <div class="img_pessoa">
+                <div class="img_pessoaG">
                     <img src="../Pagina_Sobre/img/gabriel.jpg" alt="" srcset="" height="200px" width="200px">
                 </div>
                 </div>
@@ -43,30 +43,15 @@
                 <div class="social-container">
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/projeto_infotech/" target="_blank">
+                        <a href="https://www.instagram.com/theyellowgabs/" target="_blank">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
         
-        <div id="section_02">
+        <div id="section_02" class="section">
             <hr class="featurette-divider">
 
                 <div class="row featurette">
@@ -84,30 +69,15 @@
                 <div class="social-container">
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/projeto_infotech/" target="_blank">
+                        <a href="https://www.instagram.com/peu_phos/" target="_blank">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                 </ul>
                 </div>
         </div>
 
-        <div id="section_03">
+        <div id="section_03" class="section">
             <hr class="featurette-divider">
 
                 <div class="row featurette">
@@ -115,7 +85,7 @@
                     <h2 class="nome_pessoa">
                         <span class="text-muted"> BRUNO RAFAEL DE SIQUEIRA  </span>
                         </h2>   
-                    <p class="lead">Bruno é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br> Trabalha atualmente como Exterminador de Dinossauros, o trabalho dele é tão eficaz que é quase impossivel você encontrar algum dinossauro vivo.</p>
+                    <p class="lead">Bruno é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br>Trabalha atualmente como analista de suporte analista de suporte e gerente de projetos, também tem experiência com desenvolvimento Front-End.<!--Trabalha atualmente como Exterminador de Dinossauros, o trabalho dele é tão eficaz que é quase impossivel você encontrar algum dinossauro vivo.--> </p>
                 </div>
                 <div class="img_pessoa">
                     <img src="../Pagina_Sobre/img/Bruno.jpg" alt="" srcset="" height="200px" width="200px">
@@ -125,41 +95,73 @@
                 <div class="social-container">
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://www.instagram.com/projeto_infotech/" target="_blank">
                             <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                 </ul>
                 </div>
         </div>
         
-        
+        <div id="section_04" class="section">
+            <hr class="featurette-divider">
 
+                <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="nome_pessoa">
+                        <span class="text-muted"> Matheus Braga Santos </span>
+                        </h2>   
+                    <p class="lead">Matheus é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br> Trabalha atualmente com desenvolvimento na linguagem Java e como Q.A testando aplicações e soluções de outros desenvolvedores.</p>
+                </div>
+                <div class="img_pessoa">
+                    <img src="../Pagina_Sobre/img/matheus.jpg" alt="" srcset="" height="200px" width="200px">
+                </div>
+                </div>
 
+                <div class="social-container">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/_bragams/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+        </div>
 
+        <div id="section_05" class="section">
+            <hr class="featurette-divider">
 
-                
+                <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="nome_pessoaL">
+                        <span class="text-muted"> Lucas Henrique de Souza Carvalho </span>
+                        </h2>   
+                    <p class="leadL">Lucas é um aluno do 5° semestre do curso de TADS da faculdade Anhanguera, na Unidade de Osasco. <br> Trabalha atualmente com desenvolvimento SharePoint, mas já teve experiência com toda a plataforma Microsoft 365 e Desenvolvimento Front-End.</p>
+                </div>
+                <div class="img_pessoaL">
+                    <img src="../Pagina_Sobre/img/lucas.jpg" alt="" srcset="" height="200px" width="200px">
+                </div>
+                </div>
 
+                <div class="social-container">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/lucashcarv1/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+        </div>
 
-
-
-
-
+        <footer>
+        <p>&copy; 2021. Feito pelos Alunos TADS Noturno</p>
+        </footer>
+        <!-- 
+         O  ola, mundo.
+        -I-
+        / \
+        -->
 </body>
-
 </html>

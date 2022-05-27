@@ -57,8 +57,26 @@ header{
 .nome_pessoa p{
     top: 50px;
 }
+.nome_pessoaL p{
+    top: 50px;
+}
+.nome_pessoaG p{
+    top: 50px;
+}
 
 .img_pessoa{
+    width: 200px;
+    height: 200px;
+    transform: translateX(1000px);
+    transform: translateY();
+}
+.img_pessoaG{
+    width: 200px;
+    height: 200px;
+    transform: translateX(1000px);
+    transform: translateY();
+}
+.img_pessoaL{
     width: 200px;
     height: 200px;
     transform: translateX(1000px);
@@ -67,12 +85,31 @@ header{
 .img_pessoa img{
     border-radius: 100px;
 }
+.img_pessoaG img{
+    border-radius: 100px;
+}
+.img_pessoaL img{
+    border-radius: 100px;
+}
+
 
 .text-muted{
     font-size: 2.3rem;
     Font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
 }
 .lead{
+    font-size: 1.5rem;
+    transform: translateY(150px);
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    
+}
+.leadG{
+    font-size: 1.5rem;
+    transform: translateY(150px);
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    
+}
+.leadL{
     font-size: 1.5rem;
     transform: translateY(150px);
     Font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -124,22 +161,277 @@ header{
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+    background-color: #0f1d3a;
+    color: white;
+    text-align: center;
 }
 
 #section_05{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: rgb(255, 255, 255);
     background-size:cover;
     background-repeat:round;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
 
+footer{
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f1d3a;
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+
+/*
+@media (max-width: 1100px){
+    main{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 20vw;
+    }
+    .menu{
+        font-size: 3vw;
+    }
+    #section_01{
+        height: 80vw;
+    }
+}*/
 
 
 
+@media (max-width: 1024px){
+    .logo img{
+        width: 20vw;
+    }
+
+    .menu{
+        font-size: 2vw;
+    }
+    .col-md-7{
+        width: 1007px;
+    }
+    .leadG{
+        margin-top: 10vw;
+        width:  1007px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(120px);
+    }
+    .lead{
+        margin-top: 10vw;
+        width: 1007px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(200px);
+    }
+    .leadL{
+        margin-top: 10vw;
+        width:  1007px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(160px);
+    }
+    .nome_pessoa{
+        font-size: 4vw;
+        width: 1007px;
+        transform: translateY(-30px);
+    }
+    .nome_pessoaG{
+        font-size: 4vw;
+        width: 1007px;
+        transform: translateY(-90px);
+    }
+    .nome_pessoaL{
+        font-size: 4vw;
+        width: 1007px;
+        transform: translateY(0px);
+    }
+    .img_pessoa{
+        width: 1007px;
+        transform: translateY(-300px);
+    }
+    
+    .img_pessoaG{
+        width: 1007px;
+        transform: translateY(-320px);
+    }
+    .img_pessoaL{
+        width: 1007px;
+        transform: translateY(-310px);
+    }
+    .social-container{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .logo img{
+        width: 20vw;
+    }
+
+    .menu{
+        font-size: 2vw;
+    }
+    .col-md-7{
+        width: 751px;
+    }
+    .leadG{
+        margin-top: 10vw;
+        width:  751px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(150px);
+    }
+    .lead{
+        margin-top: 10vw;
+        width: 751px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(220px);
+    }
+    .leadL{
+        margin-top: 10vw;
+        width:  751px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(190px);
+    }
+    .nome_pessoa{
+        font-size: 4vw;
+        width: 751px;
+        transform: translateY(-80px);
+    }
+    .nome_pessoaG{
+        font-size: 4vw;
+        width: 751px;
+        transform: translateY(-80px);
+    }
+    .nome_pessoaL{
+        font-size: 4vw;
+        width: 751px;
+        transform: translateY(-60px);
+    }
+    .img_pessoa{
+        width: 751px;
+        transform: translateY(-230px);
+    }
+    
+    .img_pessoaG{
+        width: 751px;
+        transform: translateY(-250px);
+    }
+    .img_pessoaL{
+        width: 751px;
+        transform: translateY(-250px);
+    }
+    .social-container{
+        display: none;
+    }
+}
+
+@media (max-width: 530px){
+    .logo img{
+        width: 20vw;
+    }
+
+    .menu{
+        font-size: 2vw;
+    }
+    .col-md-7{
+        width: 483px;
+    }
+    .leadG{
+        margin-top: 10vw;
+        width:  483px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(170px);
+    }
+    .lead{
+        margin-top: 10vw;
+        width: 483px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(245px);
+    }
+    .leadL{
+        margin-top: 10vw;
+        width:  483px;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: 60px;
+        transform: translateY(180px);
+    }
+    .nome_pessoa{
+        font-size: 4vw;
+        width: 483px;
+        transform: translateX(0px);
+        transform: translateY(-80px);
+    }
+    .nome_pessoaG{
+        font-size: 4vw;
+        width: 483px;
+        transform: translateX(0px);
+        transform: translateY(-80px);
+    }
+    .nome_pessoaL{
+        font-size: 4vw;
+        width: 483px;
+        transform: translateX(0px);
+        transform: translateY(-80px);
+    }
+    .img_pessoa{
+        width: 483px;
+        transform: translateY(-150px);
+    }
+    
+    .img_pessoaG{
+        width: 483px;
+        transform: translateY(-220px);
+    }
+    .img_pessoaL{
+        width: 483px;
+        transform: translateY(-210px);
+    }
+
+
+    .social-container{
+        display: none;
+    }
+}
 
 
 
