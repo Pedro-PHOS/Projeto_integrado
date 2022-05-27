@@ -99,6 +99,13 @@ header{
     padding-bottom: 40px;
 }
 
+.container p1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 @media (max-width: 1305px){
     .container {
         height: 1500px;

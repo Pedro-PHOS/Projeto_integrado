@@ -20,7 +20,7 @@
 
             <div class="menu">
                 <li><a href="../Home/index.html">Home</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li><a href="../Cursos/index.html">Cursos</a></li>
                 <li><a href="../Login_Cadastro/LoginRegistro.php">Login</a></li>
                 <li><a href="../Pagina_Sobre/pagina_sobre.php">Sobre</a></li>
             </div>

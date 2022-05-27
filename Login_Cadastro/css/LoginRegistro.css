@@ -40,12 +40,13 @@ header{
 }
 
 .form-box {
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    height: 450px;
     position: center;
     background: #fff;
     overflow: hidden;
     margin-top: 100px;
+    align-items: center;
 }
 
 .button-box{
@@ -142,4 +143,13 @@ span {
 
 .msg-sucesso {
     color: rgb(255, 119, 0);
+}
+
+.msg-erro {
+    align-items: center;
+    margin: 0px 400px 25px 400px;
+    background-color: red;
+    color: #fff;
+    text-align: center;   
+    border-color: red;
 }
