@@ -30,6 +30,23 @@ html{
 
 .navHeader-LinksDiv{
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navHeader-Links{
+    margin-top: 28px;
+}
+
+.linkHeader{
+    font-size: 16px;
+    padding-right: 13px;
+    
+    margin-top: 14px;
+
+    text-decoration: none;
+    color: white;
+    font-style: none;
 }
 
 .navHeader img{
