@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -95,7 +96,7 @@ header{
 
 .text-muted{
     font-size: 2.3rem;
-    Font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 .lead{
     font-size: 1.5rem;
