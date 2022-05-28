@@ -70,7 +70,7 @@
 
             function Login() {
                 x.style.left = "0px";
-                y.style.left = "800px";
+                y.style.left = "2000px";
                 z.style.left = "0px";
             }
 
