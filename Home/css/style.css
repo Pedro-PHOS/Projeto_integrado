@@ -171,6 +171,10 @@ footer{
         width: 100%;
     }
 
+    .text_02{
+        font-size: 2vw;
+    }
+
 }
 
 @media (max-width: 530px){
@@ -216,6 +220,7 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+
 
     .button_cursos {
         width: 60%;
