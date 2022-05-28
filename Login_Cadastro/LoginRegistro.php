@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css\LoginRegistro.css">
+    <link rel="icon" href="">
     <title>Infotech  Login e Registro</title>
 </head>
 <body>

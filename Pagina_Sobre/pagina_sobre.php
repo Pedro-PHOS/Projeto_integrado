@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/pagina_sobre.css">
-    <link rel="icon" href="../Home/assets/Backgorund/icon.jpg">
+    <link rel="icon" href="">
     <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
