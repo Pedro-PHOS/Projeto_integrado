@@ -1,4 +1,6 @@
-* {margin: 0px;}
+* {margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 header{
     display: flex;

@@ -17,8 +17,8 @@
                 <img src="../Home/assets/Logo.png" alt="">
             </div>
             <div class="menu">
-                <li><a href="../Home/index.html">Home</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Cursos/index.html">Cursos</a></li>
                 <li><a href="../Login_Cadastro/LoginRegistro.php">Login</a></li>
                 <li><a href="../Pagina_Sobre/pagina_sobre.php">Sobre</a></li>
             </div>
@@ -156,7 +156,7 @@
         </div>
 
         <footer>
-        <p>&copy; 2021. Feito pelos Alunos TADS Noturno</p>
+        <p>&copy; 2020~2022 Feito pelos Alunos TADS Noturno</p>
         </footer>
         <!-- 
          O  ola, mundo.
