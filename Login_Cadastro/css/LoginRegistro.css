@@ -148,8 +148,8 @@ span {
 .msg-erro {
     align-items: center;
     margin: 0px 400px 25px 400px;
-    background-color: red;
+    border-color: red;
     color: #fff;
     text-align: center;   
-    border-color: red;
+    background-color: rgba(225, 88, 88, 0.834);
 }
