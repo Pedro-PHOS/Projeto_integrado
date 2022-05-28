@@ -3,33 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../Paginas de Curso/css/PaginaDeCurso.css">
-    <link rel="icon" href="./assets/InfotechLogoMiniatura.png">
-    <title>Infotech | Python</title>
+    <link rel="stylesheet" type="text/css" href="css/PaginaDeCurso.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="icon" href="./assets/InfotechLogoMiniatura.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotech | PHP</title>
 </head>
 
 <!--Cabe�alho do Site-->
 <!--Se��o na qual s�o armazenados os links de navega��o do site-->
+
 <body>
-    <section id="Hero" style="background:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.527)), url('./assets/BannerInicialPaginaCursoPython.png')no-repeat center/cover;">
+    <section id="Hero"
+        style="background:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.527)), url('./assets/phpHero.jpg') no-repeat center/cover;">
+
+        <div class="navHeader">
+            <div class="navHeader-LinksDiv">
+                <a href="../index.html" class="linkHeader" target="_blank">
+                    <img src="./assets/InfotechLogo.png" class="navHeader-logo" style="color: black;">
+                </a>
+                <div class="navHeader-Links">
+                <a href="../Cursos/index.html" class="linkHeader">Cursos</a>
+                <a href="..//Pagina_Sobre/pagina_sobre.php" class="linkHeader">Sobre</a>
+                <a href="../Login_Cadastro/LoginRegistro.php" class="linkHeader">Login</a>
+            </div>
+                </img>
+            </div>
+        </div>
+
         <div class="Container">
             <div class="textContent">
 
                 <div class="logoComTitulo">
-                    <img src="02.png" id="Logo_Title">
-                    <h1>PHP</h1>
-                </div>
+                    <img src="./assets/php-27-226042.png" id="Logo_Title">
 
-                <h2>Sinopse da Ferramenta</h2>
-                <p> PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.
+                </div>
+                <h1>PHP</h1>
+                <p> PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. 
                 </p>
-                <a href="">Começar a Aprender</a>
             </div>
-        <div>
+            <div>
     </section>
-    <section id="PageBody">
-        <P>PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.</P>
-   </section>
+
+
+    <section class="PageBody">
+
+        <div class="PrimeiraSecaoDeTexto">
+            <h2 class="TituloTexto">
+                O que é PHP?
+            </h2>
+            <p class="PageBodyText">O PHP foi criado em 1995 pelo programador canadense Rasmus Lerdorf. A sigla é um acrônimo para PHP: Hypertext Preprocessor. A linguagem tornou-se popular por ter uma sintaxe mais simples, e por mesclar o código executado no lado do servidor com HTML, facilitando a criação de páginas com conteúdo dinâmico.<br> Assim como o Python e o JavaScript, ele também é classificado como uma linguagem de scripts, ou seja, um conjunto de instruções via código que servem, principalmente, para automatizar tarefas. <br> Com o PHP, você pode “instruir” uma página estática (criada com HTML e CSS) a executar ações específicas e mais complexas, como validar as informações de um formulário antes dos dados serem enviados de volta ao browser.</p>
+
+            <h2 class="TituloTexto">
+                Versões e vantagens
+            </h2>
+            <p class="PageBodyText">Atualmente, sua versão mais recente é a 8.0.1, mas ainda há suporte para a versão 7.x, que recebe atualizações constantes e continua sendo muito utilizada em sites, blogs e páginas de comércio eletrônico. <br>Com a evolução da linguagem, o PHP ganhou outras formas de utilização além dos sites dinâmicos, como scripts de linha de comando para automatização de diversos tipos de tarefas e aplicações para desktop.<br> Por ser uma linguagem de programação simples de aprender, mas com recursos avançados e bom desempenho, o PHP já foi utilizado na criação de vários sites e serviços famosos, como Facebook, WordPress e Wikipédia. Alguns deles ainda possuem partes de suas funcionalidades feitas com a linguagem.<br> Você pode aprender mais sobre o PHP e seus recursos acessando a documentação oficial.</p>
+        </div>
+
+
+
+
+    </section>
+
+    <section>
+        <div class="linkCursos">
+            <h2 id="TituloTextoCursosPython">Cursos de PHP</h2>
+            <a href="https://www.cursoemvideo.com/curso/php-basico/" target="_blank" style="width: 800px; height:200px; text-decoration: none;">
+                <div class="CursoflexElements">
+                    <img class="CursoflexElementsImage" src="./assets/phpBackground.png" alt="">
+
+                    <div class="CursoFlexColumn">
+                        <h3> Curso de
+                            PHP Básico - CursoEmVideo</h3>
+                        <p>Nesse Curso Grátis de PHP para Iniciantes, você vai aprender os primeiros passos para criar sites que utilizem a tecnologia PHP incorporada.</p>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://www.impacta.com.br/cursos/php-7-modulo-i" target="_blank" style="width: 800px; height:200px; text-decoration: none;">
+                <div class="CursoflexElements">
+                    <img class="CursoflexElementsImage" src="./assets/curso_preparando-o-ambiente-para-programar-em-php_2057.png" alt="">
+
+                    <div class="CursoFlexColumn">
+                        <h3> PHP 7
+                            Módulo 1 - Impacta</h3>
+                        <p>Nas aulas vamos conversar sobre recursos básicos da linguagem PHP, uso de operadores, estruturas de controle e funções, além da utilização de banco de dados para deixar seu projeto ainda mais completo.</p>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="https://hcode.com.br/cursos/PHP7" target="_blank" style="width: 800px; height:200px; text-decoration: none;">
+                <div class="CursoflexElements">
+                    <img class="CursoflexElementsImage" src="./assets/phpbackground2.jpg" alt="">
+
+                    <div class="CursoFlexColumn">
+                        <h3> Curso Completo de PHP 7 - HCode</h3>
+                        <p>Torne-se um Desenvolvedor PHP, aprenda com dois especialistas a programar do básico ao avançado em um projeto completo.</p>
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+    </section>
     <section id="PageFooter">
 
     </section>
