@@ -82,6 +82,12 @@ header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }  
 
+.cursos p1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
 .moreAbt:link{
     text-decoration: none;
 }
@@ -106,9 +112,12 @@ header{
     overflow: hidden;
 }
 
-@media (max-width: 1305px){
+@media (max-width: 1370px){
     .container {
         height: 1500px;
+    }
+    .comments {
+        padding-bottom: 0px;
     }
 }
 
