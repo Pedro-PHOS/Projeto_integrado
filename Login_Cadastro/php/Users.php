@@ -25,8 +25,9 @@ class Usuario {
 
         //Verificando cadastro baseado no e-mail 
         
-        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
+        $sql = $pdo->prepare("SELECT localid FROM [dbo].[UserData] WITH(NOLOCK) WHERE [userEmail] = :e OR [userId] = :i",array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL));
         $sql->bindValue(":e",$email);
+        $sql->bindValue(":i",$user_id);
         $sql->execute();
 
         if($sql->rowCount()>0) 

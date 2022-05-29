@@ -33,21 +33,21 @@
             
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="Login()">Entrar</button>
-                <button type="button" class="toggle-btn" onclick="Register()">Registrar</button>
+                <button type="button" class="toggle-btn" id="entrar" onclick="Login()">Entrar</button>
+                <button type="button" class="toggle-btn" id="registrar" onclick="Register()">Registrar</button>
 
                 <form id="Login" class="input-group" method="post">
-                    <input type="text"  name="user_id" class="input-field" placeholder="User id" required />
-                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
+                    <input type="text"  name="user_id" class="input-field" placeholder="Usuário" required />
+                    <input type="password" name="password" class="input-field" placeholder="Senha" required />
                     <input type="checkbox" class="check-box" /><span>Lembrar Senha</span>
-                    <button name="button" value="login" type="submit" class="submit-btn" style="color: aliceblue">Log in</button>
+                    <button name="button" value="login" type="submit" class="submit-btn" >Entrar</button>
                 </form>
 
                 <form id="Register" class="input-group" method="post">
-                    <input type="text" name ="user_id" class="input-field" placeholder="User id" required />
-                    <input type="email" name="email" class="input-field" placeholder="E-mail ID" required />
-                    <input type="password" name="password" class="input-field" placeholder="Enter Password" required />
-                    <button name="button" value="register" type="submit" class="submit-btn" style="color: aliceblue">Register</button>
+                    <input type="text" name ="user_id" class="input-field" placeholder="Usuário" required />
+                    <input type="email" name="email" class="input-field" placeholder="E-mail" required />
+                    <input type="password" name="password" class="input-field" placeholder="Senha" required />
+                    <button name="button" value="register" type="submit" class="submit-btn" >Registrar</button>
                 </form>
             </div>
 
@@ -60,18 +60,24 @@
           var x = document.getElementById("Login");
           var y = document.getElementById("Register");
           var z = document.getElementById("btn");
-    
+          var entrar    = document.getElementById("entrar");
+          var registrar = document.getElementById("registrar");
+
             
             function Register() {
                 x.style.left = "-1800px";
                 y.style.left = "0px";
                 z.style.left = "110px";
+                entrar.style.color = "black";
+                registrar.style.color = "white";   
             }
 
             function Login() {
                 x.style.left = "0px";
                 y.style.left = "2000px";
                 z.style.left = "0px";
+                registrar.style.color = "black";
+                entrar.style.color="white";
             }
 
 
@@ -101,7 +107,7 @@
                     ?> <!-- Fecha o PHP --> 
 
                     <div class="msg-sucesso">
-                    Cadastro Realizado com Sucesso! Acesse para entrar
+                    Cadastro Realizado com Sucesso!
                     </div>
 
                     <?php #Abre o PHP
@@ -111,7 +117,7 @@
                     ?> <!-- Fecha o PHP --> 
                     
                     <div class="msg-erro">
-                    E-mail já cadastrado!
+                    E-mail ou Usuário já cadastrado!
                     </div>
 
                     <?php #Abre o PHP

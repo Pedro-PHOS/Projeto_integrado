@@ -41,8 +41,8 @@ header{
 
 .form-box {
     width: 100%;
-    height: 450px;
-    position: center;
+    height: 400px;
+    margin: auto;
     background: #fff;
     overflow: hidden;
     margin-top: 100px;
@@ -64,6 +64,7 @@ header{
     border: 0px;
     outline: none;
     position: relative;
+    color: white;
 }
 
 #btn {
@@ -72,10 +73,10 @@ header{
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #58cced, #1261a0);
+    background: linear-gradient(to left, #0f1d3a, #1261a0);
     border-radius: 3px;
     transition: .9s;
-    color: #fff;
+    color: white;
 }
 
 .input-group{
@@ -107,10 +108,11 @@ header{
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, #58cced, #1261a0);
+    background: linear-gradient(to left, #0f1d3a, #1261a0);
     border: 0;
     outline: none;
     border-radius: 3px;
+    color: white;
 }
 
 .check-box{
@@ -142,14 +144,31 @@ span {
 }
 
 .msg-sucesso {
-    color: rgb(255, 119, 0);
+    width: 300px;
+    border-radius: 8px;
+    margin: auto;
+    height: 50px;
+    border-color: rgb(4, 76, 21);
+    border-style: solid;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; 
+    background-color: rgba(27, 149, 64, 0.834);
 }
 
 .msg-erro {
-    align-items: center;
-    margin: 0px 400px 25px 400px;
-    border-color: red;
+    width: 300px;
+    border-radius: 8px;
+    margin: auto;
+    height: 50px;
+    background-color: rgb(192, 77, 77);
+    border-color: rgba(158, 18, 18, 0.834); 
+    border-style: solid;
     color: #fff;
-    text-align: center;   
-    background-color: rgba(225, 88, 88, 0.834);
+    text-align: center;
+    line-height: 50px;  
+}
+
+#registrar {
+    color: black;
 }
