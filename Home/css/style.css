@@ -1,45 +1,38 @@
-* {margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 header{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 10vh;
     align-items: center;
     justify-content: space-evenly;
 }
-
 
 #section_01{
     background-image: url("https://github.com/Pietrodo-Code/Projeto_integrado/blob/Homologa%C3%A7%C3%A3o/Home/assets/Backgorund/Background.jpg?raw=true");
     background-size:cover;
     background-repeat:round;
-    background-color: rgba(0, 38, 109, 0.952);
+    background-color: rgba(0, 38, 109, 0.9);
 }
 
-.logo img{
+#logo img{
     margin-top: 1vh;
-    width: 30vh;
+    height: 70px;
 }
 
-.menu{
+#menu{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 60%;
-    font-size: 4vh;
+    width: 40%;
+    font-size: 24px;
 }
 
-.menu a{
+#menu a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9) ;
+    color: white ;
 }
 
-.menu :hover{
-    color: rgb(255, 255, 255) ;
+#menu :hover{
+    border-bottom: 1px solid white;
 }
 
 #home{  
@@ -47,195 +40,156 @@ header{
     justify-content: center;
 }
 
-.sobre{
+#sobre{
     color: white;
-    width: 40%;
-    height: 90vh;
+    width: 43%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding-block: 6rem 10rem;
 }
 
-.sobre h1{
-    font-size: 8vh;
+#sobre h1{
+    font-size: 52px;
+    font-weight: 600;
 }
 
-.sobre p{
-    font-size: 3vh;
-    margin-top: 1vh;
+#sobre p{
+    font-size: 18px;
+    margin-top: 1rem;
 }
 
-.icon{
+#icon{
     width: 50%;
 }
 
+
 #section_02{
-    width: 100%;
-    height: 90vh;
-    background-color: rgb(255, 255, 255);
-    background-size:cover;
-    background-repeat:round;
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
     display: flex;
     flex-direction: column;
+    padding-block: 2rem 1rem;
 }
 
-.cursos_tittle{
-    margin-top: 4vh;
-    width: 80%;
-    justify-content: center;
-    align-self: center;
+#cursos_tittle h1{
+    font-size: 52px;
+    font-weight: 600;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.cursos_tittle h1{
-    font-size: 7vh;
-}
-
-.content_02{
+#content_02{
     display: flex ;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.illustration{
+#illustration{
     width: 40%;
 }
 
-.illustration img{
-    max-width: 100%;
+#illustration img{
+    max-width: 80%;
 }
 
-.text_02{
+#text_02{
     width: 50%;
-    font-size: 4vh;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.button_cursos {
+#button_cursos {
     align-self: center;
     display: flex;
+    width: 60%;
+    height: 6vh;
     background-color: #0f1d3a;
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    width: 40%;
-    height: 8vh;
-    border-color: white;
-    border-style: groove;
-    margin-top: 8vh;
+    border: 1px solid white;
+    margin-top: 2rem;
 }
 
-.button_cursos a{
+#button_cursos a{
     color: white;
     text-decoration: none;
 }
 
+
 footer{
-    font-size: 2vh;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0f1d3a;
-    width: 100%;
-    height: 10vh;
+    padding-block: 1rem;
     color: white;
 }
-
 
 @media (max-width: 1100px){
     #section_01{
         background-image: url("https://github.com/Pietrodo-Code/Projeto_integrado/blob/Homologa%C3%A7%C3%A3o/Home/assets/Backgorund/Background_01.jpg?raw=true");
-    }
-    
-    .logo img{
-        width: 20vw;
-    }
-
-    .menu{
-        font-size: 3vw;
     }
 
     #home{
         flex-direction: column;
     }
 
-    .sobre{
+    #sobre{
         width: 80%;
         align-self: center;
     }
 
-    .icon{
-        width: 100%;
+    #button_cursos {
+        width: 80%;
+        height: 4vh;
     }
-
-    .text_02{
-        font-size: 2vw;
-    }
-
 }
 
-@media (max-width: 530px){
-    
-    .logo img{
-        width: 20vw;
+@media (max-width: 762px){
+
+    #menu{
+        font-size: 18px;
     }
 
-    .menu{
-        font-size: 2vw;
-    }
-
-    .sobre{
-        height: 80vw;
-    }
-
-    .sobre h1{
-        font-size: 6vw;
+    #sobre h1{
+        font-size: 42px;
     }
     
-    .sobre p{
-        font-size: 2vw;
-        margin-top: 1vw;
+    #sobre p{
+        font-size: 16px;
     }
 
-    .icon{
-        width: 100%;
-    }
 
-    #section_02{
-        height: 80vw;
+    
+    #cursos_tittle h1{
+        font-size: 42px;
     }
     
-    .cursos_tittle h1{
-        font-size: 5vw;
-    }
-    
-    .text_02{
-        margin-top: 6vw;
+    #text_02{
         width: 50%;
-        font-size: 2vw;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        font-size: 16px;
     }
+}
 
-
-    .button_cursos {
-        width: 60%;
-        height: 6vw;
+@media (max-width: 560px){
+    #illustration{
+        display: none;
     }
+    #text_02{
+        width: 80%;
+    }
+}
 
-    footer{
-        font-size: 2vw;
-        height: 10vw;
 /*
      O  ola, mundo.
     -I-
     / \
 */
-    }
-}
